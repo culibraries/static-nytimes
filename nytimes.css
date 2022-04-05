@@ -1,0 +1,110 @@
+/* Reset a few elements */
+h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+img {
+  display: inline-block;
+}
+a.button {
+  cursor: pointer;
+}
+a.button.button-gold {
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px #cfb87c;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1460px;
+  }
+}
+
+/* Containing element styles */
+section {
+  padding-bottom:40px;
+}
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-box {
+  max-width: 500px;
+}
+
+.description-box {
+  overflow: hidden;
+  max-width: 400px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 18px;
+}
+
+/* General styles */ 
+.center-text {
+  text-align: center;
+}
+
+.text-no-wrap {
+  white-space: nowrap;
+}
+
+/* Animation keyframes and classes */
+@keyframes fade-in {
+  0%   { opacity:0;}
+  100% { opacity:1;}
+}
+
+@keyframes slide-right {
+  0%   { left: -100%; opacity: 0;}
+  100% { left: 0; opacity: 1;}
+}
+
+.slide-text {
+  position: relative;
+  animation: slide-right 0.65s cubic-bezier(0.63, 0.01, 0, 1.39) both;
+  animation-delay: 0.3s;
+}
+
+.fade-img {
+  animation: fade-in 0.3s ease-in; 
+}
