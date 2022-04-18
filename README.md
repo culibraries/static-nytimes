@@ -20,4 +20,4 @@ Place these files on the NFS drive mounted to CU Static Server.
 These files live on the mount point under {mount point}/nytimes/
 (ie: /usr/local/openresty/nginx/html/static/nytimes)
 
-CU Static Server handles the serving of these files along with authentication and permission checks. 
+CU Static Server handles the serving of these files along with authentication and permission checks.  There should be a location "/static/nytimes/activate" set in the Static Web server to proxy pass to the NYT Cooking sign-up page with the gift code.
